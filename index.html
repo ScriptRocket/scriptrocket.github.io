@@ -9,17 +9,18 @@
   <meta name="author" content="">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113168910-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113168910-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-113168910-1');
+    gtag('config', 'UA-113168910-2');
   </script>
 
-  <!-- Favicon -->
 
+  <!-- Favicon -->
+  <!-- needs to be changed -->
   <link rel="apple-touch-icon" sizes="57x57" href="icon.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="icon.ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="icon.ico/apple-icon-72x72.png">
@@ -73,7 +74,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Services</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#work">Our Work</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -89,15 +93,14 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/circleIzhar.png" alt="" width="300" height="300">
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/icon.svg" alt="">
       <!-- <h1 class="text-uppercase mb-0">-</h1> -->
       <!-- <hr class="star-light"> -->
-      <h2 class="font-weight-light mb-0">Software - Website - UX/UI Design</h2>
+      <h1>{</h1> <h2 class="font-weight-light mb-0"> Launching your ideas to the digital space</h2> <h1>}</h1>
     </div>
   </header>
-
-  <!-- NOT Footer (Just using the footer properties ;) -->
-  <footer class="footer text-center">
+  <!-- NOT Footer (Just using the footer properties ;)  save for social -->
+  <!-- <footer class="footer text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
@@ -136,86 +139,62 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-      <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Programs</i>
-              </div>
-            </div>
+      <div id="portfolio-heading" class="row justify-content-center mb-5">
+          <div class="col text-center">
+              <h2 class="text-uppercase text-secondary mb-0">Services</h2>
+          </div>
+        </div>
+        <div class="row text-center d-flex justify-content-center">
+          <div class="container col-xs-10 col-sm-8 col-md-4">
+            <h3>Web</h3>
             <img class="img-fluid" src="img/portfolio/code.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Photography</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/photo.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-2x" style="font-family: Lato;">Designs</i>
-              </div>
-            </div>
+            <p>Want to get a website or improve your current one online? Let us create a modern web-page to help grow your prescence.</p>
+          </div>
+          <div class="container col-xs-10 col-sm-8 col-md-4">
+            <h3>Design</h3>
             <img class="img-fluid" src="img/portfolio/design.png" alt="">
-          </a>
+            <p>Ready for a new look? We will design a cutsom layout that will work on screens big and small. Giving you a web experience that works on any device.</p>
+          </div>
+          <div class="container col-xs-10 col-sm-8 col-md-4">
+            <h3>Mobile</h3>
+            <img class="img-fluid" src="img/portfolio/photo.png" alt="">
+            <p>Ever wanted to become part of the fastest growing field in development? We'll build that mobile app you have always been dreaming about.</p>
+          </div>
         </div>
-        <!--
-		  <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Hobbies</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Empty :/</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-2x" style="font-family: Lato;">Empty :/</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
-		  //-->
+  </section>
+
+  <!-- What We Do Section -->
+  <section id="work" style="padding:1.5rem;">
+    <h2 class="text-center mb-0">Our Work</h2>
+  </section style="padding:.2rem;">
+
+  <section class="bg-primary text-white mb-0" style="padding:0rem;">
+    <div style="padding:0rem;">
+      <div class="project col-lg-12 ml-auto" style="padding:0rem; margin:0rem; background-color:rgb(216, 68, 48); height:20rem;">
+       <div class="col-xs-12 col-md-offset-6">
+         
+       </div>
       </div>
+      <div class="project col-lg-12 mr-auto" style="padding:0rem; margin:0rem; background-color:rgb(72, 121, 224); height:20rem;">
+        <!-- overlay text on image -->
+      </div>
+      <div class="project col-lg-12 mr-auto" style="padding:0rem; margin:0rem; background-color:rgb(80, 133, 80); height:20rem;">
+          <!-- overlay text on image -->
+        </div>
+    </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
+  <section class=" mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="star-light mb-5">
-      <div class="row">
+      <h2 class="text-center mb-5">About Us</h2>
+
+      <div class="row text-center">
         <div class="col-lg-4 ml-auto">
           <p class="lead">ABOUT SECTION 1</p>
         </div>
@@ -226,15 +205,14 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Section 
   <section id="contact">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-      <hr class="star-dark mb-5">
+      <h2 class="text-center  text-secondary mb-0">Contact Us!</h2>
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+           To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. 
+          The form should work on most web servers, but if the form is not working you may need to configure your web server differently. 
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -266,14 +244,14 @@
             </div>
             <br>
             <div id="success"></div>
-            <div class="form-group">
+            <div class="form-group text-center">
               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
