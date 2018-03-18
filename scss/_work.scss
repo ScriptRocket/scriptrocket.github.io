@@ -1,9 +1,81 @@
-.project{
+        .project{
         width: 100%;
         height: 10px;
-        background: url('../img/bg-image.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        filter: blur(3px);
+        // filter: blur(2px);
+        // overflow: hidden;
+        //blurr images themselves?
+        @mixin background-properties(){
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: bottom;
+        }
+        &:nth-of-type(1){
+                background: url('../img/bg/wordpresstemp2.png');
+                @include background-properties();
+        }
+        &:nth-of-type(2){
+                background: url('../img/bg/purple blur.png');
+                @include background-properties();
+        }
+        &:nth-of-type(3){
+                background: url('../img/bg/orange blur.png');
+                @include background-properties();
+        }
+
+        img{
+                max-height: 200px;
+                margin-bottom: 40px;
+        }
+
+        .work-content{
+                color: white;
+                padding-top: 60px;
+                .text-content{
+                        padding-top: 40px;
+                        padding-right: 50px;
+                }
+        }
+        @media (max-width: 992px) {
+                height: 500px !important;
+                .work-content{
+                        position: relative;
+                        .text-content{
+                                padding-top: 0px;
+                                padding-right: 0px;
+                                position: absolute;
+                                top: 50px;
+                                margin: auto;
+                                left: 0;
+                                right: 0;
+                                text-align: center;
+                        }
+                        img{
+                                position: absolute;
+                                top: 125px;
+                                margin: auto;
+                                left: 0;
+                                right: 0;
+                                
+                        }
+                        h2, p{
+                                width: 80%;
+                                margin: auto;
+                                text-align: center;
+                        }
+                }
+               
+
+              }
+
 }
+#work{
+        .container{
+                max-width: 100%;
+                padding: 0px;        
+        }
+        h2{
+                padding-bottom: 1.5rem;
+        }
+}
+
+
