@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -13,20 +13,24 @@
         return false;
       }
     }
-  });
+  })
+
 
   // Scroll to top button appear
-  $(document).scroll(function() {
+  $(document).scroll(function () {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
       $('.scroll-to-top').fadeIn();
+
     } else {
       $('.scroll-to-top').fadeOut();
+
     }
+
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -36,38 +40,60 @@
     offset: 80
   });
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+  var toggleLogo = function () {
+    var browserWidth = window.innerWidth;
+    if (browserWidth < 992) {
+      $("#logo-shrink").removeClass('hidden');
+      $("#logo-expand").addClass('hidden');
+    }
+    else {
+      $("#logo-shrink").addClass('hidden');
+      $("#logo-expand").removeClass('hidden');
     }
   };
+  // Collapse Navbar
+  var navbarCollapse = function () {
+    var scrollDistance = $(this).scrollTop();
+    var browserHeight = window.innerHeight
+    if ($("#mainNav").offset().top > browserHeight - 80) {
+      $("#mainNav").addClass("navbar-shrink");
+      $("#black-logo").removeClass("hidden");
+      $("#white-logo").addClass("hidden");
+
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+      $("#black-logo").addClass("hidden");
+      $("#white-logo").removeClass("hidden");
+
+    }
+  };
+  toggleLogo();
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  $(window).resize(toggleLogo);
+
   // Modal popup$(function () {
- /* $('.portfolio-item').magnificPopup({
-    type: 'inline',
-    preloader: false,
-    focus: '#username',
-    modal: true
-  });*/
-  $(document).on('click', '.portfolio-modal-dismiss', function(e) {
+  /* $('.portfolio-item').magnificPopup({
+     type: 'inline',
+     preloader: false,
+     focus: '#username',
+     modal: true
+   });*/
+  $(document).on('click', '.portfolio-modal-dismiss', function (e) {
     e.preventDefault();
     $.magnificPopup.close();
   });
 
   // Floating label headings for the contact form
-  $(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+  $(function () {
+    $("body").on("input propertychange", ".floating-label-form-group", function (e) {
       $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
+    }).on("focus", ".floating-label-form-group", function () {
       $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
+    }).on("blur", ".floating-label-form-group", function () {
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
