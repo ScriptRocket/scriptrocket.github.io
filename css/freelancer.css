@@ -71,7 +71,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #fff; }
+  background-color: #000; }
 
 hr.star-dark {
   border-color: #242424; }
@@ -150,12 +150,14 @@ section {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     margin: 0 auto; }
-    #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-      color: #e9ecef; }
-    #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+    #mainNav .navbar-nav li.nav-item a.nav-link {
       color: #000; }
-    #mainNav .navbar-nav li.nav-item a.nav-link.active {
-      color: #d33939; }
+      #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+        color: #e9ecef; }
+      #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+        color: #000; }
+      #mainNav .navbar-nav li.nav-item a.nav-link.active {
+        color: #d33939; }
   #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem; }
@@ -175,12 +177,8 @@ section {
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s; }
     #mainNav .navbar-nav {
-      margin-top: 0;
-      color: #000; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: black;
-      font-size: 1rem; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+      margin-top: 0; }
+      #mainNav .navbar-nav li.nav-item a.nav-link {
         color: white; }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -190,6 +188,8 @@ section {
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1rem;
       width: 25%; }
+    #mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link {
+      color: black; }
     #mainNav.navbar-shrink a.nav-link {
       color: black; }
       #mainNav.navbar-shrink a.nav-link:hover {
@@ -296,7 +296,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #fff; }
+  color: #000; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef; }
@@ -311,9 +311,9 @@ form .row:first-child .floating-label-form-group {
   background-color: #0b0b0b; }
 
 a {
-  color: #fff; }
+  color: #000; }
   a:focus, a:hover, a:active {
-    color: #e6e6e6; }
+    color: black; }
 
 .container {
   width: 100% !important; }
@@ -325,23 +325,23 @@ a {
   border-width: 2px; }
 
 .bg-primary {
-  background-color: #fff !important; }
+  background-color: #000 !important; }
 
 .bg-secondary {
   background-color: #242424 !important; }
 
 .text-primary {
-  color: #fff !important; }
+  color: #000 !important; }
 
 .text-secondary {
   color: #242424 !important; }
 
 .btn-primary {
-  background-color: #fff;
-  border-color: #fff; }
+  background-color: #000;
+  border-color: #000; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #e6e6e6;
-    border-color: #e6e6e6; }
+    background-color: black;
+    border-color: black; }
 
 .btn-secondary {
   background-color: #242424;
