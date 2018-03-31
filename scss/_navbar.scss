@@ -1,19 +1,20 @@
 // Styling for the navbar
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   @include body-font;
+  font-family: $font-lato, 'Calibri', $font-coves; //, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: $white-smoke;
   border-bottom: 1.5px solid rgba(0,0,0,0.15);
   .navbar-brand {
     color: $black;
   }
   img{
-    width: 120px;
+    width: 100px;
     margin: 5px 20px 0 20px;
   }
   #logo-shrink{
-    width: 100px;
+    width: 65px;
   }
   .hidden{
     display: none;
@@ -24,18 +25,17 @@
     margin: 0 auto;
     li.nav-item {
       a.nav-link {
-        color:black;
+        // color: $black;
         
         &:hover {
-          color: black;
-          // background-color: #d3d3d3;
+          color: $gray-200;
         }
         &:active,
         &:focus {
           color:$black;
         }
         &.active {
-          color: #d33939;
+          color: $rocket-red;
         }
       }
     }
@@ -62,22 +62,23 @@
     }
     .navbar-nav {
       margin-top: 0;
-      color: $white;
+      color: $black;
       li.nav-item {
         a.nav-link {
-          color:white;
+        // color:white;
         }
       }
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: black;
+      color:black;
       font-size: 1rem;
-      //  background: rgba(0,0,0,0.3);
         &:active,
        &:focus,
        &:hover{
-        color: black;
-        //  background: rgba(0,0,0,0.5);
+        color: white;
+       }
+       &:hover{
+        //background-color: #e98484
        }
     }
   }
@@ -88,20 +89,21 @@
     border-bottom: 1.5px solid rgba(0,0,0,0.15);
     .navbar-brand {
       font-size: 1rem;
-      color: $white;
       width: 25%;
     }
     a.nav-link {
-      color: $black !important;
+      color: black ;
       &:hover {
-        color: black;
+        color: #d33939 !important;
       }
       &:active,
       &:focus {
-        color: black;
+        color: black !important;
       }
       &.active {
+        // background-color: #d33939;
         color: #d33939 !important;
+
       }
     }
   }

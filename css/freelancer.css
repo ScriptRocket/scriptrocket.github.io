@@ -3,6 +3,37 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+@font-face {
+  font-family: 'alcubierreregular';
+  src: url("../fonts/Alcubierre/Alcubierre.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gravity';
+  src: url("../fonts/gravity/Gravity-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'simplicia';
+  src: url("../fonts/SIMPLIFICA/SIMPLIFICA/SIMPLIFICA Typeface.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'coves';
+  src: url("../fonts/Coves/Coves light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/lato/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/lato/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/lato/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/lato/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/lato/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-family: 'Lato'; }
 
@@ -40,7 +71,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #739bbd; }
+  background-color: #fff; }
 
 hr.star-dark {
   border-color: #242424; }
@@ -100,32 +131,31 @@ section {
   padding-top: 2rem; }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   font-family: 'Lato';
+  font-family: "Lato", "Calibri", "coves";
   background-color: #f5f5f5;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.15); }
   #mainNav .navbar-brand {
     color: #000; }
   #mainNav img {
-    width: 120px;
+    width: 100px;
     margin: 5px 20px 0 20px; }
   #mainNav #logo-shrink {
-    width: 100px; }
+    width: 65px; }
   #mainNav .hidden {
     display: none; }
   #mainNav .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     margin: 0 auto; }
-    #mainNav .navbar-nav li.nav-item a.nav-link {
-      color: black; }
-      #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: black; }
-      #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-        color: #000; }
-      #mainNav .navbar-nav li.nav-item a.nav-link.active {
-        color: #d33939; }
+    #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+      color: #e9ecef; }
+    #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+      color: #000; }
+    #mainNav .navbar-nav li.nav-item a.nav-link.active {
+      color: #d33939; }
   #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem; }
@@ -146,14 +176,12 @@ section {
       transition: font-size 0.3s; }
     #mainNav .navbar-nav {
       margin-top: 0;
-      color: #fff; }
-      #mainNav .navbar-nav li.nav-item a.nav-link {
-        color: white; }
+      color: #000; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: black;
       font-size: 1rem; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: black; }
+        color: white; }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -161,14 +189,13 @@ section {
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.15); }
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1rem;
-      color: #fff;
       width: 25%; }
     #mainNav.navbar-shrink a.nav-link {
-      color: #000 !important; }
+      color: black; }
       #mainNav.navbar-shrink a.nav-link:hover {
-        color: black; }
+        color: #d33939 !important; }
       #mainNav.navbar-shrink a.nav-link:active, #mainNav.navbar-shrink a.nav-link:focus {
-        color: black; }
+        color: black !important; }
       #mainNav.navbar-shrink a.nav-link.active {
         color: #d33939 !important; } }
 
@@ -269,7 +296,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #739bbd; }
+  color: #fff; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef; }
@@ -284,9 +311,9 @@ form .row:first-child .floating-label-form-group {
   background-color: #0b0b0b; }
 
 a {
-  color: #739bbd; }
+  color: #fff; }
   a:focus, a:hover, a:active {
-    color: #5182ac; }
+    color: #e6e6e6; }
 
 .container {
   width: 100% !important; }
@@ -298,23 +325,23 @@ a {
   border-width: 2px; }
 
 .bg-primary {
-  background-color: #739bbd !important; }
+  background-color: #fff !important; }
 
 .bg-secondary {
   background-color: #242424 !important; }
 
 .text-primary {
-  color: #739bbd !important; }
+  color: #fff !important; }
 
 .text-secondary {
   color: #242424 !important; }
 
 .btn-primary {
-  background-color: #739bbd;
-  border-color: #739bbd; }
+  background-color: #fff;
+  border-color: #fff; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #5182ac;
-    border-color: #5182ac; }
+    background-color: #e6e6e6;
+    border-color: #e6e6e6; }
 
 .btn-secondary {
   background-color: #242424;
